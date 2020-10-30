@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+    border-bottom: 1px solid #D0D0D0;
+}
+
+.difficulty {
+    font-size: 0.9rem;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.placeholder {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    margin-left: 20px;
+}
+
+.placeholder .label {
+    margin-right: 5px;
+}
+
+.placeholder .value {
+    font-weight: bold;
+}

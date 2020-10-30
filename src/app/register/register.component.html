@@ -1,0 +1,31 @@
+<div class="vertical">
+    <div class="horizontal">
+        <div *ngIf="submittedForm === false" class="register">
+            <div class="header">GUESS</div>
+            <div class="error" *ngIf="errorMessage !== null">{{errorMessage}}</div>
+            <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+                <div class="input">
+                    <input (focus)="onInputFocus()" type="email" name="email" [(ngModel)]="model.email" placeholder="Email" required />
+                </div>
+                <div class="input">
+                    <input (focus)="onInputFocus()" type="text" name="pseudo" [(ngModel)]="model.pseudo" placeholder="Pseudo" required />
+                    <div class="info">Votre pseudo sera visible par les autres joueurs dans la liste des records (chiffres et lettes uniquement, longueur : 3 à 50)</div>
+                </div>
+                <div class="input">
+                    <input (focus)="onInputFocus()" type="password" name="password" [(ngModel)]="model.password" placeholder="Mot de passe" required />
+                    <div class="info">(chiffres et lettes uniquement, longueur : 6 à 50)</div>
+                </div>
+                <div class="input">
+                    <input (focus)="onInputFocus()" type="password" name="passwordConfirmation" [(ngModel)]="model.passwordConfirmation" placeholder="Confirmation du mot de passe" required />
+                </div>
+                <div class="submit">
+                    <button>Envoyer</button>
+                </div>
+            </form>
+            <div routerLink="/login" class="return">Retour à la page de connexion</div>
+        </div>
+        <div *ngIf="submittedForm === true" class="loading">
+            <div class="message">Envoi des données en cours, veuillez patienter</div>
+        </div>
+    </div>
+</div>

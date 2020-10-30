@@ -1,0 +1,31 @@
+<div class="vertical">
+    <div class="horizontal">
+        <div class="menu">
+            <ul>
+                <li (click)="selectDifficulty(0)" [class.selected]="selectedDifficulty === 0"> 
+                    <div>Facile</div>
+                </li>
+                <li (click)="selectDifficulty(1)" [class.selected]="selectedDifficulty === 1">
+                    <div>Moyen</div>
+                </li>
+                <li (click)="selectDifficulty(2)" [class.selected]="selectedDifficulty === 2">
+                    <div>Difficile</div>
+                </li>
+                <li (click)="selectDifficulty(3)" [class.selected]="selectedDifficulty === 3">
+                    <div>Cauchemar</div>
+                </li>
+                <li routerLink="/menu">
+                    <div>Retour</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="detail" *ngIf="selectedDifficulty !== null">
+        <div class="description">
+            <app-game-difficulty-detail [selectedDifficulty]="selectedDifficulty"></app-game-difficulty-detail>
+            <div class="submit">
+                <button (click)="launchGame()">Jouer</button>
+            </div>
+        </div>
+    </div>
+</div>

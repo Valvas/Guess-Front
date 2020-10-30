@@ -1,0 +1,102 @@
+.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.register {
+    width: 400px;
+    max-width: calc(100% - 40px);
+    margin: 40px 20px 40px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.register .header {
+    font-size: 1.25rem;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    user-select: none;
+}
+
+.register .error {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    color: #D9534F;
+}
+
+.register form {
+    padding: 10px 0 10px 0;
+}
+
+.register form input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+    color: rgba(0, 0, 0, 0.75);
+    outline: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.register form .input {
+    margin: 10px 20px 10px 20px;
+    box-sizing: border-box;
+}
+
+.register form .input .info {
+    font-size: 0.75rem;
+    margin-top: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+.register form .submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px 20px 0 20px;
+}
+
+.register form .submit button {
+    width: 150px;
+    max-width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.register form .submit button:hover {
+    color: #6897BB;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.register .return {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.75);
+    text-decoration: underline;
+    font-style: italic;
+    user-select: none;
+    cursor: pointer;
+    margin: 0 20px 10px 20px;
+    width: max-content;
+}
+
+.register .return:hover {
+    color: #6897BB;
+}

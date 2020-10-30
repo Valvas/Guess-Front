@@ -1,0 +1,17 @@
+<div class="vertical">
+    <div class="horizontal">
+        <form class="login" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+            <div class="header">GUESS</div>
+            <div class="field">
+                <input type="email" placeholder="Email" />
+            </div>
+            <div class="field">
+                <input type="password" placeholder="Mot de passe" />
+            </div>
+            <div class="submit">
+                <button>Envoyer</button>
+            </div>
+            <div routerLink="/register" class="register">Créer un compte</div>
+        </form>
+    </div>
+</div>
