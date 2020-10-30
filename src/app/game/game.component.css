@@ -1,7 +1,22 @@
+.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .game {
     border: 1px solid #D0D0D0;
     width: 600px;
     border-radius: 2px;
     box-sizing: border-box;
     overflow: hidden;
+    max-width: calc(100% - 40px);
+    margin: 40px 20px 40px 20px;
 }

@@ -1,12 +1,13 @@
 <div class="vertical">
     <div class="horizontal">
-        <form class="login" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <form class="login" (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
             <div class="header">GUESS</div>
+            <div class="error" *ngIf="errorMessage !== null">{{errorMessage}}</div>
             <div class="field">
-                <input type="email" placeholder="Email" />
+                <input (focus)="onInputFocus()" [(ngModel)]="model.email" name="email" type="email" placeholder="Email" />
             </div>
             <div class="field">
-                <input type="password" placeholder="Mot de passe" />
+                <input (focus)="onInputFocus()" [(ngModel)]="model.password" name="password" type="password" placeholder="Mot de passe" />
             </div>
             <div class="submit">
                 <button>Envoyer</button>

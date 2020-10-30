@@ -1,5 +1,5 @@
 import { GameDifficulty } from '../GameDifficulty';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-game-header',
@@ -8,13 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class GameHeaderComponent implements OnInit {
-  gameDifficulty: GameDifficulty;
+  @Input() gameDifficulty: GameDifficulty;
 
-  constructor() {
-    
-  }
+  constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
 }

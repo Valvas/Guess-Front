@@ -11,7 +11,7 @@ export class RegisterComponent implements OnInit {
   model: RegisterUserModel = new RegisterUserModel();
 
   errorMessage: string = null;
-  submittedForm: boolean = true;
+  submittedForm: boolean = false;
 
   constructor() { }
 

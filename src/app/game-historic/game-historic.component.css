@@ -1,3 +1,9 @@
 .historic {
     height: 400px;
 }
+
+.historic ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
